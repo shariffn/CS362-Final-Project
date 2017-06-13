@@ -104,8 +104,8 @@ public class UrlValidatorTest extends TestCase {
 			   },
 			   third[] = {
 				     "/somePage/fire/index.php",
-				     "?this=that",
-				     "?a=b&b=c",
+				     "/?this=that",
+				     "/?a=b&b=c",
 				     ""
 			   };
 	   for (byte i = 0; i < first.length; i++) {

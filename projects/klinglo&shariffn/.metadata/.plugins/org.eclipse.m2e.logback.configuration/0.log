@@ -1,0 +1,17 @@
+2017-06-12 17:21:10,161 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-06-12 17:21:55,307 [Worker-5] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: finalprojectB:URLValidatorInCorrect:1.0-SNAPSHOT @ C:\Users\Larry\Documents\Logan\Computer Science\CS362\CS362-Final-Project\projects\klinglo&shariffn\URLValidatorInCorrect\pom.xml.
+2017-06-12 17:21:58,661 [Worker-5] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /URLValidatorInCorrect/src/main/java
+2017-06-12 17:21:58,662 [Worker-5] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /URLValidatorInCorrect/src/test/java
+2017-06-12 17:21:58,723 [Worker-5] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 15 sec
+2017-06-12 17:21:59,821 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-12 17:21:59,822 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Larry\Documents\Logan\Computer Science\CS362\CS362-Final-Project\projects\klinglo&shariffn\URLValidatorInCorrect\src\main\resources
+2017-06-12 17:21:59,825 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-12 17:21:59,825 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Larry\Documents\Logan\Computer Science\CS362\CS362-Final-Project\projects\klinglo&shariffn\URLValidatorInCorrect\src\test\resources
+2017-06-12 17:22:00,909 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-12 17:22:00,909 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Larry\Documents\Logan\Computer Science\CS362\CS362-Final-Project\projects\klinglo&shariffn\URLValidatorInCorrect\src\main\resources
+2017-06-12 17:22:00,911 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-12 17:22:00,912 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Larry\Documents\Logan\Computer Science\CS362\CS362-Final-Project\projects\klinglo&shariffn\URLValidatorInCorrect\src\test\resources
+2017-06-12 17:56:49,542 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-12 17:56:49,542 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Larry\Documents\Logan\Computer Science\CS362\CS362-Final-Project\projects\klinglo&shariffn\URLValidatorInCorrect\src\main\resources
+2017-06-12 17:56:49,544 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-12 17:56:49,572 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Larry\Documents\Logan\Computer Science\CS362\CS362-Final-Project\projects\klinglo&shariffn\URLValidatorInCorrect\src\test\resources
