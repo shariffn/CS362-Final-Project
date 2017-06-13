@@ -47,7 +47,7 @@ public class UrlValidatorTest extends TestCase {
         assertTrue(urlVal.isValid("http://www.apache.org/"));
         assertFalse(urlVal.isValid("1.1.1.1")); //changed
         assertFalse(urlVal.isValid("www.amazon.com/x/y/z")); //changed
-        assertTrue("Port 8000 should be valid", urlVal.isValid("http://www.amazon.com:8000/abcde")); //changed
+        assertTrue("Port 80 should be valid", urlVal.isValid("http://www.amazon.com:80/abcde")); //changed
         assertTrue("Query String \"?x=y&y=z\" should be valid", urlVal.isValid("http://www.amazon.com/abcde?x=y&y=z")); //changed
         assertFalse("\"3ft\" shouldn't be a vlid protocol", urlVal.isValid("3ft://google.com"));
         assertTrue("Query String \"?x=!\" should be valid", urlVal.isValid("http://www.amazon.com/abcde?x=!"));
