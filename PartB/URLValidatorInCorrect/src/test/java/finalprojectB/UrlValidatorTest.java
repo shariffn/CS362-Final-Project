@@ -63,7 +63,7 @@ public class UrlValidatorTest extends TestCase {
 
         //Min & max ports
         assertTrue(urlVal.isValid("https://www.google.com:0/1/2/3/4"));
-        assertTrue(urlVal.isValid("http://6.5.4.3:65535/?h=j")); //changed
+        assertTrue("http://6.5.4.3:65535/?h=j", urlVal.isValid("http://6.5.4.3:65535/?h=j")); //changed
 
         //Min & max IP's
         assertTrue(urlVal.isValid("http://0.0.0.0"));
@@ -77,7 +77,7 @@ public class UrlValidatorTest extends TestCase {
 
         //Min & max ports
         assertFalse(urlVal.isValid("http://www.google.com:-1/1/2"));
-        //assertFalse(urlVal.isValid("http://6.5.4.3:65536/?h=j"));
+        assertFalse("http://6.5.4.3:65536/?h=j", urlVal.isValid("http://6.5.4.3:65536/?h=j"));
 
         //Invalid IP's
         assertFalse(urlVal.isValid("http://211.-2.30.174"));
@@ -150,17 +150,52 @@ public class UrlValidatorTest extends TestCase {
     				   ".js",
     				   "alsjdhfoithavhlairutaytlivaueytki"
        };
-       for (byte i = 0; i < myScheme.length; i++) {
-        	for (byte j = 0; j < myAuthority.length; j++) {
-        		for (byte k = 0; k < myPort.length; k++) {
-        			for (byte m = 0; m < myPath.length; m++) {
-				       assertTrue(myScheme[i] + myAuthority[j] + myPort[k] + myPath[m], urlVal.isValid(myScheme[i] + myAuthority[j] + myPort[k] + myPath[m]));
-				       //assertTrue(myScheme[i] + myAuthority[j] + myPath[k], urlVal.isValid(myScheme[i] + myAuthority[j] + myPath[k]));
-				   }
-    			}
-            }
-        }
-    }
+		for (byte i = 0; i < myScheme.length; i++) {
+			for (byte j = 0; j < myAuthority.length; j++) {
+				for (byte k = 0; k < myPort.length; k++) {
+					for (byte m = 0; m < myPath.length; m++) {
+						assertTrue(myScheme[i] + myAuthority[j] + myPort[k] + myPath[m], urlVal.isValid(myScheme[i] + myAuthority[j] + myPort[k] + myPath[m]));
+					}
+				}
+			}
+		}
+		for (byte i = 0; i < myBadScheme.length; i++) {
+			for (byte j = 0; j < myAuthority.length; j++) {
+				for (byte k = 0; k < myPort.length; k++) {
+					for (byte m = 0; m < myPath.length; m++) {
+						assertFalse(myBadScheme[i] + myAuthority[j] + myPort[k] + myPath[m], urlVal.isValid(myBadScheme[i] + myAuthority[j] + myPort[k] + myPath[m]));
+					}
+				}
+			}
+	    }
+		for (byte i = 0; i < myScheme.length; i++) {
+			for (byte j = 0; j < myBadAuthority.length; j++) {
+				for (byte k = 0; k < myPort.length; k++) {
+					for (byte m = 0; m < myPath.length; m++) {
+						assertFalse(myScheme[i] + myBadAuthority[j] + myPort[k] + myPath[m], urlVal.isValid(myScheme[i] + myBadAuthority[j] + myPort[k] + myPath[m]));
+					}
+				}
+			}
+		}
+		for (byte i = 0; i < myScheme.length; i++) {
+			for (byte j = 0; j < myAuthority.length; j++) {
+				for (byte k = 0; k < myBadPort.length; k++) {
+					for (byte m = 0; m < myPath.length; m++) {
+						assertFalse(myScheme[i] + myAuthority[j] + myBadPort[k] + myPath[m], urlVal.isValid(myScheme[i] + myAuthority[j] + myBadPort[k] + myPath[m]));
+					}
+				}
+			}
+		}
+		for (byte i = 0; i < myScheme.length; i++) {
+			for (byte j = 0; j < myAuthority.length; j++) {
+				for (byte k = 0; k < myPort.length; k++) {
+					for (byte m = 0; m < myBadPath.length; m++) {
+						assertFalse(myScheme[i] + myAuthority[j] + myPort[k] + myBadPath[m], urlVal.isValid(myScheme[i] + myAuthority[j] + myPort[k] + myBadPath[m]));
+					}
+				}
+			}
+		}
+	}
 
     public void testAnyOtherUnitTest()
     {
