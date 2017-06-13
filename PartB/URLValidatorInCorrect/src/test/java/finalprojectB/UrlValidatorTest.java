@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package finalprojectA;
+package finalprojectB;
 
 import junit.framework.TestCase;
 
@@ -81,7 +81,7 @@ public class UrlValidatorTest extends TestCase {
 
         //Invalid IP's
         assertFalse(urlVal.isValid("http://211.-2.30.174"));
-        assertFalse(urlVal.isValid("http://256.1.2.3")); //changed
+        assertFalse("http://256.1.2.3", urlVal.isValid("http://256.1.2.3")); //changed
     }
 
 
